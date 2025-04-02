@@ -5,7 +5,33 @@ pub mod prover;
 use crate::prover::make_proof;
 use crate::prover::verify_proof;
 
+use std::env;
+
 fn main() {
+    let args: Vec<String> = env::args().collect();
+
+    if args.len() > 1 {
+        let mop = args[1].clone();
+
+        if mop == "-c" {
+            client();
+        }
+        else if mop == "-s" {
+            server();
+        }
+        else if mop == "-h" {
+            help();
+        }
+        else {
+            println!("Argument {} not recognized. Use -h for usage.", mop);
+        }
+    }
+    else {
+        println!("Program must have at least 1 argument!");
+    }
+}
+
+fn client() {
     let p = Passport::from_args(
         '>',
         String::from("ITA"),
@@ -22,17 +48,17 @@ fn main() {
         0,
         6
     );
+    let h = p.hash();
+    let (proof, env, b) = make_proof(h);
+}
 
-    println!("{}", p.to_string());
+fn server() {
+    //let res = verify_proof(proof, env, b);
+}
 
-    let arr = p.hash();
-    println!("{}",arr[0]);
-
-    let (proof, env, b) = make_proof(arr);
-    println!("Proof created");
-
-    println!("Verifying proof");
-    let res = verify_proof(proof, env, b);
-
-    println!("{}", res);
+fn help() {
+    println!("Usage: ");
+    println!("-c\tRun in client mode");
+    println!("-s\tRun in server mode");
+    println!("-h\tPrint this help message");
 }
