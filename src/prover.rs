@@ -24,6 +24,24 @@ pub struct ProofEnv {
     B: RistrettoPoint,
 }
 
+//pub struct ProofEnvSerialized {
+//    C_bytes: [u8; 32],
+//    G_bytes: Vec<[u8; 32]>,
+//    F_bytes: [u8; 32],
+//    B_bytes: [u8; 32],
+//}
+
+//impl ProofEnv {
+//    pub fn serialize(&self) -> ProofEnvSerialized {
+//        ProofEnvSerialized {
+//            C_bytes = self.C.to_bytes(),
+//            G_bytes = self.G.map(|point| point.to_bytes()).collect(),
+//            F_bytes = self.F.compress().to_bytes(),
+//            B_bytes = self.B.compress().to_bytes()
+//        }
+//    }
+//}
+
 
 pub fn make_proof(priv_vec: [u8;32]) -> (LinearProof, ProofEnv, Vec<Scalar>) {
     let mut rng = ThreadRng::default();
@@ -49,7 +67,7 @@ pub fn make_proof(priv_vec: [u8;32]) -> (LinearProof, ProofEnv, Vec<Scalar>) {
 
 
     let res = LinearProof::create(
-        &mut transcript,
+&mut transcript,
         &mut rng,
         &C,
         r,
@@ -67,7 +85,7 @@ pub fn make_proof(priv_vec: [u8;32]) -> (LinearProof, ProofEnv, Vec<Scalar>) {
 
 pub fn verify_proof(proof: LinearProof, env: ProofEnv, b: Vec<Scalar>) -> bool {
     let mut tran = Transcript::new(b"Passport Prover");
-    let res = proof.verify(&mut tran, &env.C, &env.G, &env.F, &env.B, b.clone()).unwrap();
+    let _res = proof.verify(&mut tran, &env.C, &env.G, &env.F, &env.B, b.clone()).unwrap();
     true
 }
 

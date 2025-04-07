@@ -1,0 +1,168 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{10}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{} and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showURL}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showURL #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Bitansky et~al\mbox{.}(2012)]%
+        {cryptoeprint:2012/095}
+\bibfield{author}{\bibinfo{person}{Nir Bitansky}, \bibinfo{person}{Ran
+  Canetti}, \bibinfo{person}{Alessandro Chiesa}, {and} \bibinfo{person}{Eran
+  Tromer}.} \bibinfo{year}{2012}\natexlab{}.
+\newblock \bibinfo{title}{Recursive Composition and Bootstrapping for {SNARKs}
+  and Proof-Carrying Data}.
+\newblock \bibinfo{howpublished}{Cryptology {ePrint} Archive, Paper 2012/095}.
+\newblock
+\urldef\tempurl%
+\url{https://eprint.iacr.org/2012/095}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Bunz et~al\mbox{.}(2017)]%
+        {Bunz17}
+\bibfield{author}{\bibinfo{person}{Benedikt Bunz}, \bibinfo{person}{Jonathan
+  Bootle}, \bibinfo{person}{Dan Boneh}, \bibinfo{person}{Andrew Poelstra},
+  \bibinfo{person}{Pieter Wuille}, {and} \bibinfo{person}{Greg Maxwell}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Bulletproofs: Short Proofs for Confidential
+  Transactions and More}.
+\newblock  (\bibinfo{year}{2017}).
+\newblock
+\urldef\tempurl%
+\url{https://web.stanford.edu/~buenz/pubs/bulletproofs.pdf}
+\showURL{%
+Retrieved April 6, 2025 from \tempurl}
+
+
+\bibitem[de~Valence(2018)]%
+        {VAL18}
+\bibfield{author}{\bibinfo{person}{Henry de Valence}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \bibinfo{title}{Merlin}.
+\newblock
+\urldef\tempurl%
+\url{https://crates.io/crates/merlin}
+\showURL{%
+Retrieved April 6, 2025 from \tempurl}
+
+
+\bibitem[de~Valence et~al\mbox{.}(2018)]%
+        {VYA18}
+\bibfield{author}{\bibinfo{person}{Henry de Valence}, \bibinfo{person}{Cathie
+  Yun}, \bibinfo{person}{}, {and} \bibinfo{person}{Oleg Andreev}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \bibinfo{title}{Bulletproofs}.
+\newblock
+\urldef\tempurl%
+\url{https://crates.io/crates/bulletproofs}
+\showURL{%
+Retrieved April 6, 2025 from \tempurl}
+
+
+\bibitem[Gibson(2022)]%
+        {Gibson22}
+\bibfield{author}{\bibinfo{person}{Adam Gibson}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{From Zero (Knowledge) to Bulletproofs}.
+\newblock  (\bibinfo{date}{27 Jun} \bibinfo{year}{2022}).
+\newblock
+\urldef\tempurl%
+\url{https://github.com/AdamISZ/from0k2bp}
+\showURL{%
+Retrieved April 5, 2025 from \tempurl}
+
+
+\bibitem[Groth(2009)]%
+        {Groth09}
+\bibfield{author}{\bibinfo{person}{Jens Groth}.}
+  \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{Linear Algebra with Sub-linear Zero-Knowledge
+  Arguments}.
+\newblock  (\bibinfo{year}{2009}).
+\newblock
+\urldef\tempurl%
+\url{http://www0.cs.ucl.ac.uk/staff/J.Groth/MatrixZK.pdf}
+\showURL{%
+Retrieved April 6, 2025 from \tempurl}
+
+
+\bibitem[Organization(2021)]%
+        {ICAO2}
+\bibfield{author}{\bibinfo{person}{International Civil~Aviation Organization}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Doc 9303{,} Machine Readable Travel
+  Document} (\bibinfo{edition}{8} ed.)}.
+\newblock
+\showISBNx{978-92-9275-309-2}
+
+
+\bibitem[Organization(NA)]%
+        {ICAO1}
+\bibfield{author}{\bibinfo{person}{International Civil~Aviation Organization}.}
+  \bibinfo{year}{NA}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{ePassport Basics}}.
+\newblock
+\urldef\tempurl%
+\url{https://www.icao.int/Security/FAL/PKD/Pages/ePassport-Basics.aspx}
+\showURL{%
+Retrieved April 5, 2025 from \tempurl}
+
+
+\bibitem[Wikipedia(2025a)]%
+        {wiki2}
+\bibfield{author}{\bibinfo{person}{Wikipedia}.}
+  \bibinfo{year}{2025}\natexlab{a}.
+\newblock \bibinfo{title}{Biometric passport}.
+\newblock
+\urldef\tempurl%
+\url{https://en.wikipedia.org/wiki/Biometric_passport}
+\showURL{%
+Retrieved April 5, 2025 from \tempurl}
+
+
+\bibitem[Wikipedia(2025b)]%
+        {wiki1}
+\bibfield{author}{\bibinfo{person}{Wikipedia}.}
+  \bibinfo{year}{2025}\natexlab{b}.
+\newblock \bibinfo{title}{Electronic identification}.
+\newblock
+\urldef\tempurl%
+\url{https://en.wikipedia.org/wiki/Electronic_identification}
+\showURL{%
+Retrieved April 5, 2025 from \tempurl}
+
+
+\end{thebibliography}
